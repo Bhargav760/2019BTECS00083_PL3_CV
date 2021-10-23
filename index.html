@@ -205,33 +205,44 @@
 		</div>
 		<hr>
 		<script defer src="JScript.js"></script>
-		<div>
-			<h1>
+		<div >
+			<h1 style="text-align: center;">
 				Feedback
 			</h1>
-			<div style="margin-top: 5%; width: 50%; margin-left: 25%;background-color: #338EFF;opacity: 40%;padding: 20px;">
-				
-				<div id="error"></div>
+			<div style="margin-top: 5%; width: 50%;background-color: #338EFF;opacity: 40%;padding: 20px;margin-bottom: 50px">
 
-				<form id="form" action="/" method="GET">
-					<div>
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" autocomplete="off">
-					</div>
-					<div>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email">
-					</div>
-					<div>
-						<label for="feedback">Feedback</label>
-						<input type="text" name="feedback" id="feedback" autocomplete="off">
-					</div>
-					<button type="submit">Submit</button>
-				</form>
+				<form id="contact" class="form">
+		            <div class="form-field" style="margin-bottom: 10px">
+		                <label for="name">Name:</label>
+		                <input type="text" name="firstname" id="firstname" autocomplete="off" style="margin-left: 30px">
+		                <small></small>
+		            </div>
+
+		            <div class="form-field" style="margin-bottom: 10px">
+		                <label for="email">Email:</label>
+		                <input type="text" name="email" id="email" autocomplete="off" style="margin-left: 30px;">
+		                <small></small>
+		            </div>
+		            
+		            <div class="form-field" style="margin-bottom: 10px;text-align: left;">
+		                <label for="feedback" >Feedback: </label>
+		                <input id="feedback" name="feedback" style="margin-left:8px;" ></input>
+		                <small></small>
+		            </div>
+
+		            <div class="form-field" style="text-align: center">
+		                <input style="color:black;" type="submit" value="Submit">
+		            </div>
+		        </form>
+
 
 			</div>
 		</div>
 
 	</div>
 </body>
+<hr>
+<footer style="text-align: center;">
+	&copy;T2_2019BTECS00083
+</footer>
 </html>
